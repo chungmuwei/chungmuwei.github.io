@@ -1,0 +1,8 @@
+title: "Mu-Wei Chung "
+description: This project is  to learn how to build my personal website using GitHub Pages!
+google_analytics: 
+show_downloads: true
+theme: jekyll-theme-midnight
+
+gems:
+  - jekyll-mentions
