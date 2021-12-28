@@ -1,6 +1,7 @@
 ## Student of **University of Sydney**
 ## Studying **Bachelor of Advanced Computing**
 ## Major: **Computer Science**
+## [Units Notes](notes-home.html)
 ---
 ### Social Media
 - Instagram: 
