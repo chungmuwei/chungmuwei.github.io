@@ -2,6 +2,8 @@
 ## Studying **Bachelor of Advanced Computing**
 ## Major: **Computer Science**
 ---
+### [Study Notes](notes-home.html)
+---
 ### Social Media
 - Instagram: 
   - Life: [@chungmuwei](https://www.instagram.com/chungmuwei)
