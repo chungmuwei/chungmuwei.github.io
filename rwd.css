@@ -1,0 +1,83 @@
+body{
+    margin: 0 0 0 0;
+    background-color: lightgray;
+}
+
+.header{
+    padding: 5px;
+    
+    background-color:green;
+    color:white;
+
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 微軟正黑體;
+    text-align: center;
+}
+
+.content{
+    width: 1200px;
+    /* height: 1000px; */
+    /* 置中 content */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.box{
+    width: 375px;
+    /* padding: 10px; */
+    margin: 10px;
+    display: inline-block;
+    vertical-align: top;
+ 
+    
+    font-size: 20px;
+    font-family: 微軟正黑體;
+    text-align: center;
+}
+
+.description{
+    margin: 10px;
+    font-size: 15px;
+    font-weight: italic;
+    font-family: "仿宋體, 微軟正黑體";
+    text-align: left;
+}
+
+/* media query */
+
+/* tablet */
+@media screen and (max-width: 1024px){
+    .header{
+        font-size: 25px;
+    }
+    .content{
+        width:100%;
+        text-align: center;
+    }
+    .box{
+        width: 45%
+    }
+    .description{
+        font-size: 12px;
+        text-align: center;
+    }
+}
+
+/* phones */
+@media screen and (max-width: 600px){
+    .header{
+        font-size: 20px;
+    }
+    .content{
+        width:100%;
+        text-align: center;
+    }
+    .box{
+        width: 90%
+    }
+    .description{
+        font-size: 10px;
+        text-align: center;
+    }
+}
