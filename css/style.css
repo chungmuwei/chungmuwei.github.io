@@ -142,8 +142,14 @@ button:hover {
     line-height: 40px;
 }
 
+/* service */
+
 .service .service-text a {
     color: darkblue;
+}
+
+.service .service-text ul {
+    padding-left: 30px;
 }
 
 .product-img, .service-img {
