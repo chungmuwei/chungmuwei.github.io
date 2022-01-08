@@ -1,0 +1,201 @@
+
+* {
+    /* box-sizing: border-box; */
+    margin: 0;
+    padding: 0;
+    /* background-color: #f0f0f0; */
+    /* background-color: white; */
+    scroll-behavior: smooth;
+}
+
+li, a, button {
+    font-family: 微軟正黑體;
+    /* color: darkblue; */
+    color: black;
+    text-decoration: none;
+}
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    position: fixed; 
+    top: 0px;
+    width: 94%;
+    align-items: center;
+    margin: 0px;
+    padding: 5px 3%;
+    background-color: lightblue;
+}
+
+.logo {
+    cursor: pointer;
+    background-color: lightblue;
+}
+
+.nav_links {
+    list-style: none;
+    background-color: lightblue;
+}
+
+.nav_links li {
+    display: inline-block;
+    font-size: 25px;
+    padding: 0px 30px;
+    background-color: lightblue;
+}
+
+.nav_links li a {
+    transition: all 0.3s ease 0s;
+    background-color: lightblue;
+}
+
+.nav_links li a:hover {
+    color: rgba(0, 0, 139, 0.8);
+}
+
+.lang_switch {
+    font-size: 20px;
+}
+
+button {
+    padding: 8px 10px;
+    color: white;
+    background-color: darkblue;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover {
+    background-color: rgba(0, 0, 139, 0.8);
+}
+
+/* content */
+
+
+.home, .about, .product-and-service, .contact{
+    background-color: whitesmoke;
+    border-radius: 18px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* align-items: top; */
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.home-title, .about-title, .product-and-service-title, .contact-title {
+    flex: none;
+    width:1200px;
+    font-size: 30px;
+    margin-bottom: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.home-text, .about-text, .product-text {
+    flex: none;
+    width: 580px;
+    padding: 10px;
+    font-size: 20px;
+    font-weight:normal;
+    line-height: 40px;
+    color: black;
+    text-align: left;
+    /* border: 3px blue solid; */
+}
+
+.home-img, .about-img {
+    flex: none;
+    width: 600px;
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(0, 191, 255);
+    text-align: center;
+    /* border: 3px blue solid; */
+}
+
+/* product */
+.product, .service {
+    flex: none;
+    width: 600px;
+    margin-bottom: 20px;
+    color: black;
+    text-align: left;   
+}
+.product .product-title, .service .service-title {
+    font-size: 25px;
+    font-weight: bold;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 10px;
+}
+
+.product .product-text, .service .service-text {
+    width: 560px;
+    font-size: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: left;
+    line-height: 40px;
+}
+
+.service .service-text a {
+    color: darkblue;
+}
+
+.product-img, .service-img {
+    flex: none;
+    width: 600px;
+    font-size: 25px;
+    color: darkblue;
+    text-align: center;
+
+}
+
+/* contact */
+.contact {
+    width: 100%;
+    border-radius: 0%;
+    background-color: lightblue;
+    margin: 0px;
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+
+.contact_list {
+    flex: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    list-style: none;
+}
+
+.contact_list li {
+    flex: auto;
+    font-size: 20px;
+    padding: 5px 10px;
+    margin: 0px 20px;
+    color: white;
+    text-align: center;
+    background-color: darkblue;
+    border-radius: 15px;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+}
+
+.contact_list li:hover {
+    font-size:21px;
+    background-color: rgba(0, 0, 139, 0.8);
+}
+
+.contact_list li a {
+    color: white;
+}
+
+.contact_list a li:hover {
+    background-color: rgba(0, 0, 139, 0.8);
+}
