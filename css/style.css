@@ -181,7 +181,7 @@ button:hover {
 }
 
 .contact_list li {
-    flex: auto;
+    flex: space-around;
     font-size: 20px;
     padding: 5px 10px;
     margin: 0px 20px;
