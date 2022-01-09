@@ -132,6 +132,39 @@ button:hover {
     }
 }
 
+/* small phone */
+@media screen and (max-width: 370px) {
+    .header {
+        width: 98%;
+        padding: 0px 1%;
+    }
+
+    .logo {
+        width: 50px;
+        position: relative;
+        top: 2px;
+    }
+    /* .nav_links {
+        
+    } */
+    .nav_links li {
+        padding: 0px 2px;
+        position: relative;
+        top: -4px;
+    }
+    .nav_links li a {
+        font-size: 14px;
+        padding: 0px 0px;
+    }
+    .lang_switch {
+        font-size: 10px;
+    }
+    button {
+        padding: 4px 5px;
+        border-radius: 25px;
+    }
+}
+
 /* ------------------------------------------- */
 
 
@@ -442,7 +475,7 @@ button:hover {
     .home-text, .about-text, .product-text {
         width: 94%;
         padding: 3%;
-        font-size: 14px;
+        font-size: 15px;
         line-height: 28px;
     }
 
@@ -462,7 +495,7 @@ button:hover {
     }
 
     .product .product-title, .service .service-title {
-        font-size: 16px;
+        font-size: 18px;
         padding-left: 1%;
         padding-right: 1%;
         margin-bottom: 5px;
@@ -470,7 +503,7 @@ button:hover {
     
     .product .product-text, .service .service-text {
         width: 98%;
-        font-size: 14px;
+        font-size: 15px;
         padding-left: 1%;
         padding-right: 1%;
         line-height: 28px;
