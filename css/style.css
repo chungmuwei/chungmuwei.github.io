@@ -29,6 +29,7 @@ li, a, button {
 }
 
 .logo {
+    width: 150px;
     cursor: pointer;
     background-color: lightblue;
 }
@@ -40,6 +41,7 @@ li, a, button {
 
 .nav_links li {
     display: inline-block;
+    vertical-align: center;
     font-size: 25px;
     padding: 0px 30px;
     background-color: lightblue;
@@ -72,8 +74,73 @@ button:hover {
     background-color: rgba(0, 0, 139, 0.8);
 }
 
+/* tablet */
+@media screen and (max-width: 1024px) {
+
+    .logo {
+        width: 100px;
+    }
+    /* .nav_links {
+        
+    } */
+    .nav_links li {
+        padding: 0px 15px;
+    }
+    .nav_links li a {
+        font-size: 20px;
+        padding: 0px 15px;
+    }
+    .lang_switch {
+        font-size: 15px;
+    }
+    button {
+        padding: 6px 8px;
+        border-radius: 35px;
+    }
+}
+
+/* phone */
+@media screen and (max-width: 800px) {
+    .header {
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+
+    .logo {
+        width: 50px;
+        position: relative;
+        top: 2px;
+    }
+    /* .nav_links {
+        
+    } */
+    .nav_links li {
+        padding: 0px 4px;
+        position: relative;
+        top: -4px;
+    }
+    .nav_links li a {
+        font-size: 14px;
+        padding: 0px 4px;
+    }
+    .lang_switch {
+        font-size: 10px;
+    }
+    button {
+        padding: 4px 5px;
+        border-radius: 25px;
+    }
+}
+
+/* ------------------------------------------- */
+
+
 /* content */
 
+.content {
+    width: 1200px; 
+    margin:auto;
+}
 
 .home, .about, .product-and-service, .contact{
     background-color: whitesmoke;
@@ -155,10 +222,32 @@ button:hover {
 .product-img, .service-img {
     flex: none;
     width: 600px;
-    font-size: 25px;
     color: darkblue;
     text-align: center;
+}
 
+.product-img p, .service-img p {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.product-img .first {
+    height: 150px;
+}
+
+.product-img .second {
+    height: 125px;
+}
+
+.product-img .third {
+    height: 200px;
+}
+
+.service-img {
+    margin-top: 30px;
+    margin-right: 100px;
+    margin-bottom: 20px;
+    width: 500px;
 }
 
 /* contact */
@@ -204,4 +293,255 @@ button:hover {
 
 .contact_list a li:hover {
     background-color: rgba(0, 0, 139, 0.8);
+}
+
+/* tablet */
+@media screen and (max-width: 1200px) {
+    .content{
+        width: 100%;
+    }
+
+    .home, .about, .product-and-service, .contact{
+        border-radius: 18px;
+        margin-top: 100px;
+        margin-bottom: 50px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    
+    .home-title, .about-title, .product-and-service-title, .contact-title {
+        width: 100%;
+        font-size: 25px;
+        margin-bottom: 10px;
+    }
+    
+    .home-text, .about-text, .product-text {
+        width: 44%;
+        padding: 3%;
+        font-size: 16px;
+        line-height: 32px;
+    }
+
+    .home-img, .about-img {
+        width: 48%;
+        /* font-size: 16px; */
+    }
+    
+    .about-img img {
+        width: 250px;
+    }
+
+    /* product */
+    .product, .service {
+        width: 48%;
+        margin-bottom: 20px;
+    }
+
+    .product .product-title, .service .service-title {
+        font-size: 20px;
+        padding-left: 1%;
+        padding-right: 1%;
+        margin-bottom: 5px;
+    }
+    
+    .product .product-text, .service .service-text {
+        width: 98%;
+        padding-left: 1%;
+        padding-right: 1%;
+        font-size: 16px;
+        line-height: 32px;
+    }
+    
+    /* service */
+    
+    .service .service-text a {
+        color: darkblue;
+    }
+    
+    .service .service-text ul {
+        padding-left: 30px;
+    }
+    
+    .product-img, .service-img {
+        /* flex: none; */
+        width: 48%;
+        font-size: 16px;
+        margin: 0px;
+        color: darkblue;
+        text-align: center;
+    
+    }
+    
+    .product-img p, .service-img p {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .product-img .first {
+        height: 100px;
+    }
+
+    .product-img .second {
+        height: 75px;
+    }
+
+    .product-img .third {
+        height: 150px;
+    }
+
+    .service-img {
+        margin-top: 25px;
+        width: 35%;
+        margin: 7.5%;
+    }
+
+    /* contact */
+    .contact {
+        /* display: block; */
+        border-radius: 0%;
+        margin: 0px;
+        padding-top: 10px;
+        padding-bottom: 25px;
+    }
+
+    .contact_list {
+        /* display: block; */
+        flex-wrap: wrap;
+    }
+    
+    .contact_list li {
+        font-size: 12px;
+        padding: 3px 6px;
+        margin: 10px 10px;
+        border-radius: 8px;
+    }
+    
+    .contact_list li:hover {
+        font-size: 13px;
+    }
+}
+
+/* phone */
+@media screen and (max-width: 800px) {
+    .content{
+        width: 100%;
+    }
+
+    .home, .about, .product-and-service, .contact{
+        border-radius: 18px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    
+    .home-title, .about-title, .product-and-service-title, .contact-title {
+        width: 100%;
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    
+    .home-text, .about-text, .product-text {
+        width: 94%;
+        padding: 3%;
+        font-size: 14px;
+        line-height: 28px;
+    }
+
+    .home-img, .about-img {
+        width: 98%;
+        font-size: 16px;
+    }
+    
+    .about-img img {
+        width: 150px;
+    }
+
+    /* product */
+    .product, .service {
+        width: 98%;
+        margin-bottom: 20px;
+    }
+
+    .product .product-title, .service .service-title {
+        font-size: 16px;
+        padding-left: 1%;
+        padding-right: 1%;
+        margin-bottom: 5px;
+    }
+    
+    .product .product-text, .service .service-text {
+        width: 98%;
+        font-size: 14px;
+        padding-left: 1%;
+        padding-right: 1%;
+        line-height: 28px;
+    }
+    
+    /* service */
+    
+    .service .service-text a {
+        color: darkblue;
+    }
+    
+    .service .service-text ul {
+        padding-left: 30px;
+    }
+    
+    .product-img, .service-img {
+        flex: none;
+        width: 98%;
+        font-size: 16px;
+        margin: 0px;
+        color: darkblue;
+        text-align: center;
+    
+    }
+    .service-img {
+        width: 48%;
+    }
+    .product-img p, .service-img p {
+        font-size: 16px;
+        margin-bottom: 5px;
+    }
+
+    .product-img .first {
+        height: 75px;
+    }
+
+    .product-img .second {
+        height: 67.5px;
+    }
+
+    .product-img .third {
+        height: 100px;
+    }
+
+    .service-img {
+        margin-top: 15px;
+        width: 250px;
+    }
+
+    /* contact */
+    .contact {
+        /* display: block; */
+        border-radius: 0%;
+        margin: 0px;
+        padding-top: 10px;
+        padding-bottom: 25px;
+    }
+
+    .contact_list {
+        /* display: block; */
+        flex-wrap: wrap;
+    }
+    
+    .contact_list li {
+        font-size: 10px;
+        padding: 2.5px 5px;
+        margin: 10px 10px;
+        border-radius: 7.5px;
+    }
+    
+    .contact_list li:hover {
+        font-size: 11px;
+    }
 }
