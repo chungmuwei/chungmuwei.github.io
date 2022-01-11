@@ -1,11 +1,11 @@
 
 * {
     /* box-sizing: border-box; */
-    font-family: 微軟正黑體;
+    font-family: 'Montserrat', sans-serif;
     margin: 0;
     padding: 0;
     /* background-color: #f0f0f0; */
-    /* background-color: white; */
+    /* background-color: black; */
     scroll-behavior: smooth;
 }
 
@@ -56,10 +56,6 @@ li, a, button {
     color: rgba(0, 0, 139, 0.8);
 }
 
-.lang_switch {
-    font-size: 20px;
-}
-
 button {
     padding: 8px 10px;
     color: white;
@@ -68,6 +64,12 @@ button {
     border-radius: 50px;
     cursor: pointer;
     transition: all 0.3s ease 0s;
+}
+
+button a {
+    color: white;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 button:hover {
@@ -90,7 +92,7 @@ button:hover {
         font-size: 20px;
         padding: 0px 15px;
     }
-    .lang_switch {
+    button a {
         font-size: 15px;
     }
     button {
@@ -123,7 +125,7 @@ button:hover {
         font-size: 14px;
         padding: 0px 4px;
     }
-    .lang_switch {
+    button a {
         font-size: 10px;
     }
     button {
@@ -156,9 +158,6 @@ button:hover {
         font-size: 14px;
         padding: 0px 0px;
     }
-    .lang_switch {
-        font-size: 10px;
-    }
     button {
         padding: 4px 5px;
         border-radius: 25px;
@@ -173,6 +172,8 @@ button:hover {
 .content {
     width: 1200px; 
     margin:auto;
+    text-align: justify;
+    text-justify:inter-ideograph;
 }
 
 .home, .about, .product-and-service, .contact{
@@ -195,6 +196,10 @@ button:hover {
     text-align: center;
 }
 
+.contact-title {
+    width:100%;
+}
+
 .home-text, .about-text, .product-text {
     flex: none;
     width: 580px;
@@ -203,7 +208,9 @@ button:hover {
     font-weight:normal;
     line-height: 40px;
     color: black;
-    text-align: left;
+    /* 文字左右對齊 */
+    text-align: justify;
+    text-justify:inter-ideograph;
     /* border: 3px blue solid; */
 }
 
@@ -240,6 +247,9 @@ button:hover {
     padding-right: 20px;
     text-align: left;
     line-height: 40px;
+    /* 文字左右對齊 */
+    text-align: justify;
+    text-justify:inter-ideograph;
 }
 
 /* service */
@@ -297,8 +307,7 @@ button:hover {
     flex: auto;
     display: flex;
     justify-content: center;
-    align-items: center;
-    
+    align-items: center; 
     list-style: none;
 }
 
