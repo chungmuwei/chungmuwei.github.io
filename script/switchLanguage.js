@@ -104,13 +104,17 @@ function switchLanguage() {
     // Update lang attrubute
     document.documentElement.setAttribute("lang", lang);
 
-    // Set banner font size base on its language
+    // Set banner font size base on the language
     var banner = document.getElementById("banner")
     if (lang == "en") {
         banner.style.fontSize = "100px"
+        // langBtn.style.fontSize = "15px"
     } else {
         banner.style.fontSize = "150px"
+        // langBtn.style.fontSize = "20px"
     }
+    // Set language button font size base on the language
+    
 
     // Change all texts to the specified language
     document.querySelectorAll(`[text-key]`).forEach(element => {

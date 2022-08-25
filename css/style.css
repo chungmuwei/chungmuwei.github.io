@@ -33,6 +33,32 @@
     --content-background-color: rgb(40, 40, 40);
 }
 
+/* Try different color theme */
+:root {
+    --primary-color: #06283D;
+    --secondary-color: #E8F9FD;
+    --link-color: #0035b9;
+    --image-caption-color: #0035b9;
+
+    --body-background-color: #E8F9FD;
+    --nav-backgroud-color: #79DAE8;
+    --button-background-color: #001E6C;
+    --hover-color: #0035b9;
+    --content-background-color: #dfeff3;
+}
+.dark-theme {
+    --primary-color: #E8F9FD;
+    --secondary-color: #06283D;
+    --link-color: #79DAE8;
+    --image-caption-color: #79DAE8;
+
+    --body-background-color: black;
+    --nav-backgroud-color: #001E6C;
+    --button-background-color: #79DAE8;
+    --hover-color: #65b8c5;
+    --content-background-color: #06283D;
+}
+
 body {
     background-color: var(--body-background-color);
     /* background: linear-gradient(rgb(255, 72, 0), rgb(0, 68, 255)); */
@@ -93,7 +119,7 @@ nav {
     border: none;
     border-radius: 50px;
     cursor: pointer;
-    transition: all 0.3s ease 0s;
+    /* transition: all 0.3s ease 0s; */
     font-size: 20px;
     margin-right: 10px;
     background-color: var(--button-background-color);
@@ -281,18 +307,19 @@ button:hover {
     background-color: var(--content-background-color);
     border-radius: 18px;
     display: flex;
-    justify-content: center;
+    justify-content: center; 
     flex-wrap: wrap;
     /* align-items: top; */
     margin-top: 100px;
     margin-bottom: 100px;
+    
 }
 
 .home-title, .about-title, .product-and-service-title, .contact-title {
     flex: none;
     width:1200px;
     font-size: 30px;
-    margin-bottom: 30px;
+    margin: 30px 0px;
     font-weight: bold;
     text-align: center;
     color: var(--primary-color);
@@ -304,8 +331,8 @@ button:hover {
 
 .home-text, .about-text, .product-text {
     flex: none;
-    width: 580px;
-    padding: 10px;
+    width: 46%;
+    padding: 2%;
     font-size: 20px;
     font-weight:normal;
     line-height: 40px;
@@ -318,7 +345,8 @@ button:hover {
 
 .home-img, .about-img {
     flex: none;
-    width: 600px;
+    width: 46%;
+    padding: 2%;
     text-align: center;
 }
 
@@ -328,7 +356,7 @@ button:hover {
     width: 600px;
     margin-bottom: 20px;
     color: var(--primary-color);
-    text-align: left;   
+    text-align: left;
 }
 .product .product-title, .service .service-title {
     font-size: 25px;
@@ -447,18 +475,18 @@ button:hover {
     .home-title, .about-title, .product-and-service-title, .contact-title {
         width: 100%;
         font-size: 25px;
-        margin-bottom: 10px;
+        margin: 20px 0px;
     }
     
     .home-text, .about-text, .product-text {
         width: 44%;
-        padding: 3%;
+        /* padding: 3%; */
         font-size: 16px;
         line-height: 32px;
     }
 
     .home-img, .about-img {
-        width: 48%;
+        width: 44%;
         /* font-size: 16px; */
     }
     
