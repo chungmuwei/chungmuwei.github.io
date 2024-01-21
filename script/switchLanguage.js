@@ -29,7 +29,7 @@ let languageData = {
             "product-img2": "電機絕緣件應用：APG或真空澆注樹脂系統",
             "product-img3": "比成器＆比流器應用：APG或真空澆注樹脂系統",
             // services
-            "service-title": "Agency",
+            "service-title": "Vacuum casting equipment",
             "service1": "Xiamen Vactec",
             "service2": " vacuum casting equipment",
             "service3": "For detail imformation, please refer to the ",
@@ -74,7 +74,7 @@ let languageData = {
             "product-img2": "電機絕緣件應用：APG或真空澆注樹脂系統",
             "product-img3": "比成器＆比流器應用：APG或真空澆注樹脂系統",
             // services
-            "service-title": "代理設備",
+            "service-title": "真空澆注設備",
             "service1": "廈門維克機械設備有限公司",
             "service2": "的真空澆注設備",
             "service3": "詳細資料請見",
